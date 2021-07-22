@@ -1,0 +1,12 @@
+#gallery {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+li:not(:last-child) {
+    margin-right: 20px;
+}
+
