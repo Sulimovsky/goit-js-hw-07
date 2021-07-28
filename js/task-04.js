@@ -10,11 +10,13 @@ refs.increment.addEventListener('click', increment);
 refs.decrement.addEventListener('click', decrement);
 
 function increment () {
-    +refs.value.textContent++;
+    let value = +counterValue ++;
+    refs.value.textContent = value;
 }
 
 function decrement () {
-    refs.value.textContent--;
+    let value = +counterValue --;
+    refs.value.textContent = value;
 }
 
 
