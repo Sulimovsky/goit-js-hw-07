@@ -18,6 +18,7 @@ const ulEl = document.querySelector('#gallery');
 function createGallery (elements) {
     elements.map(el => {
         const string = `<li><img src="${el.url}" alt="${el.alt}" width="410" height="260"></li>`;
+
         ulEl.insertAdjacentHTML('afterbegin', string);
     });
 };
