@@ -7,7 +7,7 @@ inputEl.addEventListener('blur', validationInput);
 function validationInput (event) {
     inputEl.classList.add('invalid');
 
-    if (+dataValue <= event.currentTarget.value.length) {
+    if (+dataValue <= event.currentTarget.value.length && +dataValue >= event.currentTarget.value.length) {
         inputEl.classList.replace('invalid', 'valid');
     }
 };
